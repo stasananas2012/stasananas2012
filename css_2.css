@@ -1,0 +1,214 @@
+
+.myButton {
+  margin-left: 510px;
+  margin-top: 50px;
+	background-color:#000000;
+	border-radius:40px;
+	border:1px solid #b6ddf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Prompt', sans-serif;
+	font-size:30px;
+	padding:16px 31px;
+	text-decoration:none;
+	
+}
+.myButton:hover {
+	background-color: #b6ddf3;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    cursor: none;
+    background-color: black;
+    color: #ffffff;
+    font-family: 'Prompt', sans-serif
+    
+  }
+
+
+  
+  #flashlight {
+    --Xpos: 50vw;
+    --Ypos: 1000vh;
+  }
+  #flashlight:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(
+      circle 9em at var(--Xpos) var(--Ypos),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1)
+    );
+  }
+  @media screen and (min-width: 800px) {
+    body {
+      font-size: 24px;
+    }
+  }
+  #image1{
+    margin: auto 5px;
+    float: left;
+  }
+  #image2{
+    margin: auto 5px;
+    float: left;
+  }
+  #image3{
+    margin-left: 3px;
+    float: left;
+     left:2px; 
+     top:2px;
+     
+  }
+  #loader{
+    
+    top: 9900;
+  
+    bottom: 1200px;
+    left: 40;
+    z-index: 0;
+ 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#loader-txt-wrap{
+    
+    width: 100%;
+    height: auto;
+    bottom:100%;
+    left:20%;
+}
+.loader-txt{
+    font-size: 4vw;
+    line-height: 4.28571vw;
+    letter-spacing: -.04762vw;
+    color: #f0f0f0;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgb(111, 162, 206);
+}
+.loader-txt_1{
+    font-size: 4vw;
+    line-height: 4.28571vw;
+    letter-spacing: -.04762vw;
+    color: #f0f0f0;
+    text-align: center;
+    color: rgb(43, 94, 138);
+    
+}
+.loader-txt_2{
+  font-size: 4vw;
+  line-height: 4.28571vw;
+  letter-spacing: -.04762vw;
+  color: #f0f0f0;
+  text-align: center;
+  color: rgb(17, 51, 81);}
+
+
+.loader-txt{
+    animation: textappear 5s ease-out infinite;
+}
+.loader-txt_1{
+    animation: textappear_1 5s ease-in-out infinite;
+    
+}
+.loader-txt_2{
+  animation: textappear_1 5s ease-in-out infinite;}
+@keyframes textappear{
+    0%{
+       transform: translate3d(0px, 160%, 0px) rotateZ(-4deg) rotateX(10deg);
+       opacity: 0;
+    }
+    20%{
+       transform: translate3d(0px, 160%, 0px) rotateZ(-4deg) rotateX(10deg);
+       opacity: 0;
+    }
+    50%{
+      transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+       opacity: 1;
+    }
+     80%{
+       transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+       opacity: 1;
+    }
+     100%{
+       transform: translate3d(0px, -100%, 0px) rotateZ(3deg) rotateX(10deg);
+       opacity: 0;
+    }
+}
+@keyframes textappear_1{
+     0%{
+       transform: translate3d(0px, 160%, 0px) rotateZ(-4deg) rotateX(10deg);
+       opacity: 0;
+    }
+     22%{
+       transform: translate3d(0px, 160%, 0px) rotateZ(-4deg) rotateX(10deg);
+       opacity: 0;
+    }
+    52%{
+      transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+       opacity: 1;
+    }
+     82%{
+       transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+       opacity: 1;
+    }
+     100%{
+       transform: translate3d(0px, -100%, 0px) rotateZ(3deg) rotateX(10deg);
+       opacity: 0;
+    }
+}
+@keyframes textappear_2{
+  0%{
+     transform: translate3d(0px, 160%, 0px) rotateZ(-4deg) rotateX(10deg);
+     opacity: 0;
+  }
+  20%{
+     transform: translate3d(0px, 160%, 0px) rotateZ(-4deg) rotateX(10deg);
+     opacity: 0;
+  }
+  50%{
+    transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+     opacity: 1;
+  }
+   84%{
+     transform: translate3d(0px, 0px, 0px) rotateZ(0deg) rotateX(0deg);
+     opacity: 1;
+  }
+   100%{
+     transform: translate3d(0px, -100%, 0px) rotateZ(3deg) rotateX(10deg);
+     opacity: 0;
+  }
+}
+.p{
+  font-family: 'Prompt', sans-serif;
+}
+.bubble{
+left:560px ;
+position: relative;
+}
+.click{
+  font-family: 'Prompt', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: relative;
+left:670px;
+bottom: 50px;
+ 
+}
